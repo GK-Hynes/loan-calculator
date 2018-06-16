@@ -17,7 +17,7 @@
           <h1 class="heading display-5 pb-3">
             Loan Calculator
           </h1>
-          <form id="loan-form">
+          <form id="loan-form" autocomplete="off">
             <div class="form-group">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -48,30 +48,32 @@
           <!-- RESULTS -->
           <div id="results" class="pt-4">
             <h5>Results</h5>
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Monthly Payment</span>
+            <form autocomplete="off">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Monthly Payment</span>
+                  </div>
+                  <input type="number" class="form-control" id="monthly-payment" disabled>
                 </div>
-                <input type="number" class="form-control" id="monthly-payment" disabled>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Total Payment</span>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Payment</span>
+                  </div>
+                  <input type="number" class="form-control" id="total-payment" disabled>
                 </div>
-                <input type="number" class="form-control" id="total-payment" disabled>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Total Interest</span>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Interest</span>
+                  </div>
+                  <input type="number" class="form-control" id="total-interest" disabled>
                 </div>
-                <input type="number" class="form-control" id="total-interest" disabled>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
